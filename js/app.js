@@ -38,10 +38,10 @@ async function main() {
 
 function convertCurrency(e) {
   e.preventDefault();
-  result.textContent = (
+  result.textContent = `Result: ${(
     (Number(inputFrom.value) / selectFrom.value) *
     selectTo.value
-  ).toFixed(2);
+  ).toFixed(2)}`;
 }
 
 function fillOptions(currencies, select) {
